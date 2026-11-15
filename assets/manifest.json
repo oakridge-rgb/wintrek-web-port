@@ -1,0 +1,420 @@
+{
+ "alert": {
+  "w": 40,
+  "h": 150,
+  "path": "/home/z/my-project/download/wintrek/assets/alert.png"
+ },
+ "base": {
+  "w": 34,
+  "h": 100,
+  "path": "/home/z/my-project/download/wintrek/assets/base.png"
+ },
+ "borg": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/borg.png"
+ },
+ "btncom": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btncom.png"
+ },
+ "btndam": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btndam.png"
+ },
+ "btnlrs": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btnlrs.png"
+ },
+ "btnnav": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btnnav.png"
+ },
+ "btnpha": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btnpha.png"
+ },
+ "btnpho": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btnpho.png"
+ },
+ "btnshe": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btnshe.png"
+ },
+ "btnsrs": {
+  "w": 54,
+  "h": 30,
+  "path": "/home/z/my-project/download/wintrek/assets/btnsrs.png"
+ },
+ "checked": {
+  "w": 11,
+  "h": 11,
+  "path": "/home/z/my-project/download/wintrek/assets/checked.png"
+ },
+ "course": {
+  "w": 175,
+  "h": 203,
+  "path": "/home/z/my-project/download/wintrek/assets/course.png"
+ },
+ "dam": {
+  "w": 313,
+  "h": 209,
+  "path": "/home/z/my-project/download/wintrek/assets/dam.png"
+ },
+ "distance": {
+  "w": 117,
+  "h": 61,
+  "path": "/home/z/my-project/download/wintrek/assets/distance.png"
+ },
+ "entl": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/entl.png"
+ },
+ "entr": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/entr.png"
+ },
+ "execute": {
+  "w": 117,
+  "h": 31,
+  "path": "/home/z/my-project/download/wintrek/assets/execute.png"
+ },
+ "explbasd": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explbasd.png"
+ },
+ "explbrg": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explbrg.png"
+ },
+ "explbrgd": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explbrgd.png"
+ },
+ "explentl": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explentl.png"
+ },
+ "explentr": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explentr.png"
+ },
+ "explfar": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explfar.png"
+ },
+ "explfard": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explfard.png"
+ },
+ "explklg": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explklg.png"
+ },
+ "explklgd": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explklgd.png"
+ },
+ "explrom": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explrom.png"
+ },
+ "explromd": {
+  "w": 34,
+  "h": 200,
+  "path": "/home/z/my-project/download/wintrek/assets/explromd.png"
+ },
+ "fareng": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/fareng.png"
+ },
+ "impulse": {
+  "w": 117,
+  "h": 61,
+  "path": "/home/z/my-project/download/wintrek/assets/impulse.png"
+ },
+ "klingon": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/klingon.png"
+ },
+ "lineart": {
+  "w": 188,
+  "h": 64,
+  "path": "/home/z/my-project/download/wintrek/assets/lineart.png"
+ },
+ "lrblock": {
+  "w": 75,
+  "h": 31,
+  "path": "/home/z/my-project/download/wintrek/assets/lrblock.png"
+ },
+ "memo": {
+  "w": 280,
+  "h": 84,
+  "path": "/home/z/my-project/download/wintrek/assets/memo.png"
+ },
+ "numeric": {
+  "w": 15,
+  "h": 234,
+  "path": "/home/z/my-project/download/wintrek/assets/numeric.png"
+ },
+ "numericg": {
+  "w": 15,
+  "h": 234,
+  "path": "/home/z/my-project/download/wintrek/assets/numericg.png"
+ },
+ "openent": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/openent.png"
+ },
+ "phasbox": {
+  "w": 88,
+  "h": 53,
+  "path": "/home/z/my-project/download/wintrek/assets/phasbox.png"
+ },
+ "photon": {
+  "w": 3,
+  "h": 3,
+  "path": "/home/z/my-project/download/wintrek/assets/photon.png"
+ },
+ "romulan": {
+  "w": 34,
+  "h": 25,
+  "path": "/home/z/my-project/download/wintrek/assets/romulan.png"
+ },
+ "score": {
+  "w": 420,
+  "h": 108,
+  "path": "/home/z/my-project/download/wintrek/assets/score.png"
+ },
+ "shedil": {
+  "w": 88,
+  "h": 53,
+  "path": "/home/z/my-project/download/wintrek/assets/shedil.png"
+ },
+ "sheshe": {
+  "w": 88,
+  "h": 53,
+  "path": "/home/z/my-project/download/wintrek/assets/sheshe.png"
+ },
+ "ship": {
+  "w": 358,
+  "h": 87,
+  "path": "/home/z/my-project/download/wintrek/assets/ship.png"
+ },
+ "singwide": {
+  "w": 139,
+  "h": 53,
+  "path": "/home/z/my-project/download/wintrek/assets/singwide.png"
+ },
+ "star0": {
+  "w": 34,
+  "h": 100,
+  "path": "/home/z/my-project/download/wintrek/assets/star0.png"
+ },
+ "star1": {
+  "w": 34,
+  "h": 100,
+  "path": "/home/z/my-project/download/wintrek/assets/star1.png"
+ },
+ "star2": {
+  "w": 34,
+  "h": 100,
+  "path": "/home/z/my-project/download/wintrek/assets/star2.png"
+ },
+ "stpanel": {
+  "w": 189,
+  "h": 236,
+  "path": "/home/z/my-project/download/wintrek/assets/stpanel.png"
+ },
+ "tlockbox": {
+  "w": 82,
+  "h": 53,
+  "path": "/home/z/my-project/download/wintrek/assets/tlockbox.png"
+ },
+ "tlockon": {
+  "w": 53,
+  "h": 23,
+  "path": "/home/z/my-project/download/wintrek/assets/tlockon.png"
+ },
+ "unchcked": {
+  "w": 11,
+  "h": 11,
+  "path": "/home/z/my-project/download/wintrek/assets/unchcked.png"
+ },
+ "warp": {
+  "w": 117,
+  "h": 61,
+  "path": "/home/z/my-project/download/wintrek/assets/warp.png"
+ },
+ "back": {
+  "wav": true,
+  "bytes": 30468,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 3.81
+ },
+ "code1": {
+  "wav": true,
+  "bytes": 60166,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 7.52
+ },
+ "exec": {
+  "wav": true,
+  "bytes": 3532,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 0.44
+ },
+ "explo": {
+  "wav": true,
+  "bytes": 12116,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 1.51
+ },
+ "imp": {
+  "wav": true,
+  "bytes": 7662,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 0.96
+ },
+ "open": {
+  "wav": true,
+  "bytes": 60856,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 7.61
+ },
+ "phas": {
+  "wav": true,
+  "bytes": 7662,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 0.96
+ },
+ "phot": {
+  "wav": true,
+  "bytes": 7652,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 0.96
+ },
+ "phx": {
+  "wav": true,
+  "bytes": 15704,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 1.96
+ },
+ "phx2": {
+  "wav": true,
+  "bytes": 7682,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 0.96
+ },
+ "reda": {
+  "wav": true,
+  "bytes": 34852,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 4.36
+ },
+ "song": {
+  "wav": true,
+  "bytes": 235744,
+  "rate": 8000,
+  "ch": 1,
+  "bits": 8,
+  "dur": 29.47
+ },
+ "btn.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "com.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "dam.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "lrs.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "main.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "msg.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "nav.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "panel.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "pha.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "pho.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "she.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "srs.ico": {
+  "w": 32,
+  "h": 32
+ },
+ "icon-512": {
+  "w": 512,
+  "h": 512
+ }
+}

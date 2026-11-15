@@ -1,0 +1,125 @@
+/* WinTrek web port — Windows 3.1 look (16-color VGA palette, MDI chrome) */
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #000;
+  font-family: Arial, Helvetica, sans-serif; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+.hidden { display: none !important; }
+
+#viewport { width: 100%; height: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+#stage { width: 800px; height: 600px; transform-origin: center center; flex: none; }
+
+/* ---------- frame window ---------- */
+#frame { width: 100%; height: 100%; background: #000; border: 2px outset #c0c0c0;
+  display: flex; flex-direction: column; }
+#menubar { background: #c0c0c0; height: 20px; display: flex; align-items: center;
+  padding: 0 2px; flex: none; border-bottom: 1px solid #808080; position: relative; }
+#menubar .menu { padding: 2px 7px; font-size: 12px; color: #000; cursor: pointer; }
+#menubar .menu.open, #menubar .menu:hover { background: #000080; color: #fff; }
+#frame-title { position: absolute; right: 6px; font-size: 11px; color: #000; opacity: .7; }
+
+#client { flex: 1; position: relative; overflow: hidden; background: #000; }
+#desk { position: absolute; inset: 0; }
+#desk canvas.stars { position: absolute; inset: 0; }
+
+/* no-game center: line art + prompt */
+#no-game { position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; pointer-events: none; }
+#no-game img { image-rendering: pixelated; }
+#no-game .prompt { color: #f00; font-size: 12px; margin-top: 10px; text-align: center; }
+
+/* ---------- MDI child windows (Win 3.1 chrome) ---------- */
+.wt-win { position: absolute; background: #c0c0c0; border: 2px solid;
+  border-color: #fff #808080 #808080 #fff; box-shadow: 1px 1px 0 #000;
+  display: flex; flex-direction: column; }
+.wt-tbar { height: 18px; background: #808080; display: flex; align-items: center;
+  flex: none; cursor: default; touch-action: none; }
+.wt-tbar.active { background: #000080; }
+.wt-tbar .sys { width: 16px; height: 14px; background: #c0c0c0; border: 1px solid;
+  border-color: #fff #000 #000 #fff; margin: 0 2px; font-size: 10px; line-height: 11px;
+  text-align: center; color: #000; cursor: pointer; flex: none; }
+.wt-tbar .ttl { flex: 1; text-align: center; color: #fff; font-size: 11px; font-weight: bold;
+  letter-spacing: .5px; overflow: hidden; white-space: nowrap; }
+.wt-tbar .min { width: 16px; height: 14px; background: #c0c0c0; border: 1px solid;
+  border-color: #fff #000 #000 #fff; margin: 0 2px; color: #000; font-size: 9px;
+  line-height: 11px; text-align: center; cursor: pointer; flex: none; }
+.wt-body { flex: 1; position: relative; overflow: hidden; margin: 2px; }
+.wt-body canvas { position: absolute; left: 0; top: 0; image-rendering: pixelated; }
+
+/* ---------- minimized icons ---------- */
+#iconbar { position: absolute; left: 4px; bottom: 2px; display: flex; gap: 14px; z-index: 5000; }
+.mdi-icon { width: 56px; text-align: center; cursor: pointer; }
+.mdi-icon img { width: 32px; height: 32px; image-rendering: pixelated; }
+.mdi-icon .lbl { font-size: 10px; color: #fff; background: #000; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; }
+
+/* ---------- dropdown menu ---------- */
+#dropdown { position: fixed; z-index: 9000; background: #c0c0c0; border: 2px solid;
+  border-color: #fff #000 #000 #fff; box-shadow: 2px 2px 0 #000; min-width: 190px; padding: 2px 0; }
+#dropdown .mi { padding: 3px 20px 3px 24px; font-size: 12px; color: #000; cursor: pointer;
+  position: relative; white-space: nowrap; }
+#dropdown .mi:hover { background: #000080; color: #fff; }
+#dropdown .mi.disabled { color: #808080; pointer-events: none; }
+#dropdown .mi .chk { position: absolute; left: 8px; }
+#dropdown .mi .acc { float: right; margin-left: 24px; color: inherit; opacity: .8; }
+#dropdown .sep { height: 2px; margin: 3px 2px; border-top: 1px solid #808080;
+  border-bottom: 1px solid #fff; }
+
+/* ---------- modal overlays ---------- */
+#modal { position: fixed; inset: 0; z-index: 9500; display: flex;
+  align-items: center; justify-content: center; }
+#modal-box { border: 2px solid; border-color: #fff #000 #000 #fff; box-shadow: 3px 3px 0 #000; }
+
+.memo-box { background: #fff; width: 420px; padding: 8px; position: relative; }
+.memo-box img { image-rendering: pixelated; }
+.memo-box .rborder { border: 3px double #f00; margin-top: 6px; padding: 10px 14px; }
+.memo-box pre { font: 13px "Courier New", monospace; color: #000; white-space: pre-wrap; }
+.memo-box .hint { text-align: center; font-size: 10px; color: #808080; padding-top: 6px; }
+
+.score-box { background: #fff; width: 470px; padding: 8px; }
+.score-box .rborder { border: 3px double #f00; margin-top: 6px; padding: 10px 14px 14px; }
+.score-box table { width: 100%; font: bold 15px Arial, Helvetica, sans-serif; color: #000;
+  border-collapse: collapse; margin-top: 8px; }
+.score-box td { padding: 1px 6px; }
+
+.about-box { background: #000; width: 420px; padding: 8px; }
+.about-box .rborder { border: 3px double #f00; margin-top: 6px; padding: 12px; }
+.about-box pre { font: bold 15px "Times New Roman", Times, serif; color: #f00;
+  background: #000; text-align: center; white-space: pre-wrap; }
+
+.pause-box { background: #fff; width: 220px; height: 110px; padding: 6px; }
+.pause-box .rborder { border: 3px double #f00; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center; }
+.pause-box span { color: #f00; font-size: 16px; letter-spacing: 1px; }
+
+/* Win 3.1 style dialog */
+.dlg { background: #c0c0c0; width: 300px; border: 2px solid;
+  border-color: #fff #000 #000 #fff; }
+.dlg .dlg-tbar { height: 18px; background: #000080; color: #fff; font-size: 11px;
+  font-weight: bold; text-align: center; line-height: 18px; }
+.dlg .dlg-body { padding: 12px; }
+.dlg .row { margin: 8px 0; font-size: 13px; color: #000; }
+.dlg input { font: 13px "Courier New", monospace; width: 100%; border: 2px solid #000;
+  padding: 2px 4px; background: #fff; text-transform: uppercase; outline: none; }
+.dlg .btns { text-align: center; margin-top: 12px; }
+.btn31 { display: inline-block; min-width: 74px; padding: 4px 12px; background: #c0c0c0;
+  border: 2px solid; border-color: #fff #000 #000 #fff; box-shadow: 1px 1px 0 #000;
+  font-size: 12px; color: #000; cursor: pointer; text-align: center; }
+.btn31:active { border-color: #000 #fff #fff #000; box-shadow: none; }
+.btnrow { display: flex; gap: 10px; justify-content: center; }
+
+/* file list (open dialog) */
+.filelist { border: 2px solid #000; background: #fff; height: 130px; overflow-y: auto;
+  font: 13px "Courier New", monospace; }
+.filelist .f { padding: 1px 6px; cursor: pointer; color: #000; }
+.filelist .f.sel, .filelist .f:hover { background: #000080; color: #fff; }
+
+/* opening animation */
+#opening { position: fixed; inset: 0; z-index: 9600; background: #000; }
+#opening canvas { width: 100%; height: 100%; }
+
+/* touch helpers: keep buttons big enough */
+@media (pointer: coarse) {
+  #menubar .menu { padding: 3px 9px; font-size: 13px; }
+  #menubar { height: 24px; }
+  .wt-tbar { height: 22px; }
+  .wt-tbar .sys, .wt-tbar .min { width: 20px; height: 18px; font-size: 12px; }
+}
