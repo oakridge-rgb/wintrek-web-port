@@ -6,7 +6,7 @@ rebuilt from the original C source code to preserve the original's mechanics,
 presentation and feel, not to modernise them.
 
 **Play / install:** https://oakridge-rgb.github.io/wintrek/
-
+just like all beautiful game ports, this was made with the help of ai, specifically GLM 5.3 AGENT mode. 
 ## What this is
 
 - The **original game's rules**, ported line-by-line from Joe Jaworski's own
